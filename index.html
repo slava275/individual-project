@@ -3,19 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <title>Individual Project</title>
+    <link rel="shortcut icon" href="photos/logo.png" type="image/x-icon">
 </head>
 <body>
+
+    <!--HEADER-->
     <header class="header">
-        <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+        <div class="container">
+            <div class="logo">FigmaLand</div>
+
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Pricing</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="header-socials">
+                <a href="#"><img src="photos/twitter.png" alt="X" /></a>
+                <a href="#"><img src="photos/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="photos/linkedin.png" alt="LinkedIn" /></a>
+            </div>
+        </div>
     </header>
-    <main class="main">
-        
-    </main>
+
+    <!--PHOTO-SECTION-->
+    <section class="photo-section">
+        <div class="container">
+            <h1>The best products start with Figma</h1>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+
+            <button class="primary-button">Try For Free</button>
+
+            <div class="primary-image">
+                <img src="photos/hero-laptop.png" alt="Laptop" />
+            </div>
+        </div>
+    </section>
+
+    <!--FEATURES-->
+    <section class="fetures">
+        <div class="container">
+            <h2>Features</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="photos/icon1.png" alt="icon 1" />
+
+                    <h4><b>OpenType features</b></h4>
+                    <h4><b>Variable fonts</b></h4>
+
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                </div>
+
+                <div class="feature-item">
+                    <img src="photos/icon2.png" alt="icon 2" />
+
+                    <h4><b>Design with real data</b></h4>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                </div>
+
+                <div class="feature-item">
+                    <img src="photos/icon3.png" alt="icon 3" />
+
+                    <h4><b>Fastest way to take action</b></h4>
+                    <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+                </div>
+            </div>
+
+            <video class="video" src="#" alt="video"></video>
+        </div>
+    </section>
+
+    <!--ORGANIZE-->
+    <section class="organize-section">
+        <div class="container">
+            <h2>Fastest way to organize</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+
+            <button class="primary-button">Try For Free</button>
+            <img src="photos/laptop.png" alt="laptop" />
+        </div>
+    </section>
+
+    <!--PROTOTYPING-->
+    <section class="prototyping">
+        <div class="container">
+            <p><b>At your fingertips</b></p>
+
+            <h2>Lightning fast prototyping</h2>
+
+            <p><b>Subscribe to our Newsletter</b></p>
+            <p>Available exclusivery on Figmaland</p>
+
+            <img src="photos/prototype.png" alt="prototype" />
+        </div>
+    </section>
+
+    <!--PARTNERS-->
+    <section class="partners">
+        <div class="container">
+            <h2>Partners</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+
+            <div class="partners-logos">
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/google.png" alt="Google" />
+                </div>
+
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/amazon.png" alt="Amazon" />
+                </div>
+
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/microsoft.png" alt="Microsoft" />
+                </div>
+
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/uber.png" alt="Uber" />
+                </div>
+
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/dropbox.png" alt="DropBox" />
+                </div>
+
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/google.png" alt="Google" />
+                </div>
+
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/uber.png" alt="Uber" />
+                </div>
+
+                <div class="logo">
+                    <p>Client Name</p>
+                    <img src="photos/amazon.png" alt="Amazon">
+                </div>
+            </div>
+
+            <button class="primary-button">Try For Free</button>
+        </div>
+    </section>
+
+    <!--TESTIMONIALS-->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <img src="photos/ibm.png" alt="IBM Logo">
+
+            <p class="testimonial-text">
+                Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+            </p>
+
+            <button class="primary-button">More Testimonials</button>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+
+            <div class="pricing-cards">
+
+                <div class="price-card">
+                    <h3>FREE</h3>
+                    <p class="price">0$</p>
+                    <p>Per Month</p>
+                    <ul>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <button class="primary-button">Order Now</button>
+                </div>
+
+                <div class="price-card price-card-blue">
+                    <h3>STANDARD</h3>
+                    <p class="price">10$</p>
+                    <p>Per Month</p>
+                    <ul>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <button class="primary-button">Order Now</button>
+                </div>
+
+                <div class="price-card">
+                    <h3>BUSINESS</h3>
+                    <p class="price">99$</p>
+                    <p>Per Month</p>
+                    <ul>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                        <li>Pricing Feature</li>
+                    </ul>
+                    <button class="primary-button">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="container">
+            <h2>Pricing</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button class="primary-button" type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="address">
+                <img src="photos/location.png" />
+                <p>6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+
+                <img src="photos/phone.png" />
+                <p>(843) 555-0130</p>
+
+                <img src="photos/mail.png" />
+                <p>willie.jennings@example.com</p>
+
+            </div>
+            <div class="socials">
+                <a href="#"><img src="photos/twitter.png" alt="X" /></a>
+                <a href="#"><img src="photos/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="photos/linkedin.png" alt="LinkedIn" /></a>
+            </div>
+
+            <div class="contact-us-map">
+                <img src="photos/map.png" alt="map" />
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+                <h4>Pages</h4>
+                <p>Home</p>
+                <p>Product</p>
+                <p>Pricing</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Tomothy</h4>
+                <p>Eleonor Edwards</p>
+                <p>Ted Robertson</p>
+                <p>Anetta Russel</p>
+                <p>Jennie Mckinney</p>
+                <p>Gloria Richards</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Jane Black</h4>
+                <p>Philip Jones</p>
+                <p>Product</p>
+                <p>Collen Russel</p>
+                <p>Marvin Hawkins</p>
+                <p>Bruce Simmons</p>
+            </div>
+
+            <div class="footer-socials">
+                <img src="location.png" />
+                <p>6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+                <img src="photos/phone.png"/>
+                <p>(843) 555-0130</p>
+
+                <a href="#"><img src="photos/twitter.png" alt="X" /></a>
+                <a href="#"><img src="photos/facebook.png" alt="Facebook" /></a>
+                <a href="#"><img src="photos/linkedin.png" alt="LinkedIn" /></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
