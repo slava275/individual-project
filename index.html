@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="photos/logo.png" type="image/x-icon">
 </head>
 <body>
-    <!--HEADER-->
     <header class="header">
         <div class="header__container">
 
@@ -31,7 +30,6 @@
 
         </div>
 
-        <!--HERO-->
         <section class="hero">
             <div class="hero__container">
                 <h1 class="hero__title">The best products start with Figma</h1>
@@ -48,7 +46,6 @@
 
     <main>
 
-        <!--FEATURES-->
         <section class="features">
             <div class="features__container">
 
@@ -81,7 +78,6 @@
             </div>
         </section>
 
-        <!--ORGANIZE-->
         <section class="organize">
             <div class="organize__container">
                 <h2 class="organize__title">Fastest way to organize</h2>
@@ -93,7 +89,6 @@
             </div>
         </section>
 
-        <!--PROTOTYPING-->
         <section class="prototyping">
             <div class="prototyping__container">
 
@@ -111,7 +106,6 @@
             </div>
         </section>
 
-        <!--PARTNERS-->
         <section class="partners">
             <div class="partners__container">
 
@@ -120,23 +114,23 @@
 
                 <div class="partners__logos">
 
-                    <div class="partners__logo-item">
-                        <p class="partners__client">Client Name</p>
+                    <div class="partners__item">
+                        <p class="partners__client-name">Client Name</p>
                         <img class="partners__logo" src="photos/google.png" width="120" height="50" alt="Google" />
                     </div>
 
-                    <div class="partners__logo-item">
-                        <p class="partners__client">Client Name</p>
+                    <div class="partners__item">
+                        <p class="partners__client-name">Client Name</p>
                         <img class="partners__logo" src="photos/amazon.png" width="120" height="60" alt="Amazon" />
                     </div>
 
-                    <div class="partners__logo-item">
-                        <p class="partners__client">Client Name</p>
+                    <div class="partners__item">
+                        <p class="partners__client-name">Client Name</p>
                         <img class="partners__logo" src="photos/microsoft.png" width="110" height="40" alt="Microsoft" />
                     </div>
 
-                    <div class="partners__logo-item">
-                        <p class="partners__client">Client Name</p>
+                    <div class="partners__item">
+                        <p class="partners__client-name">Client Name</p>
                         <img class="partners__logo" src="photos/uber.png" width="120" height="40" alt="Uber" />
                     </div>
 
@@ -146,7 +140,6 @@
             </div>
         </section>
 
-        <!--TESTIMONIALS-->
         <section class="testimonials">
             <div class="testimonials__container">
 
@@ -162,7 +155,6 @@
             </div>
         </section>
 
-        <!-- PRICING -->
         <section class="pricing">
             <div class="pricing__container">
 
@@ -173,9 +165,9 @@
 
                     <div class="pricing__card price-card">
                         <h3 class="price-card__title">FREE</h3>
-                        <div class="price">
-                            <p class="number"><b>0</b></p>
-                            <p class="price-card__price"><b>$</b><br />Per Month</p>
+                        <div class="price-card__price-wrapper">
+                            <p class="price-card__amount"><b>0</b></p>
+                            <p class="price-card__period"><b>$</b><br />Per Month</p>
                         </div>
                         <ul class="price-card__list">
                             <li class="price-card__item">Pricing Feature</li>
@@ -189,9 +181,9 @@
 
                     <div class="pricing__card price-card price-card--blue">
                         <h3 class="price-card__title">STANDARD</h3>
-                        <div class="price">
-                            <p class="number"><b>10</b></p>
-                            <p class="price-card__price"><b>$</b><br />Per Month</p>
+                        <div class="price-card__price-wrapper">
+                            <p class="price-card__amount"><b>10</b></p>
+                            <p class="price-card__period"><b>$</b><br />Per Month</p>
                         </div>
                         <ul class="price-card__list">
                             <li class="price-card__item">Pricing Feature</li>
@@ -204,9 +196,10 @@
                     </div>
 
                     <div class="pricing__card price-card">
-                        <div class="price">
-                            <p class="number"><b>99</b></p>
-                            <p class="price-card__price"><b>$</b><br />Per Month</p>
+                        <h3 class="price-card__title">BUSINESS</h3>
+                        <div class="price-card__price-wrapper">
+                            <p class="price-card__amount"><b>99</b></p>
+                            <p class="price-card__period"><b>$</b><br />Per Month</p>
                         </div>
                         <ul class="price-card__list">
                             <li class="price-card__item">Pricing Feature</li>
@@ -222,58 +215,57 @@
             </div>
         </section>
 
-        <!--ContactUs-->
         <section class="contact">
             <div class="contact__container">
 
                 <h2 class="contact__title">Contact Us</h2>
                 <p class="contact__subtitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
 
-                <div class="contact__form-wrapper">
-                    <form class="contact__form">
-                        <input class="contact__input" type="text" placeholder="Your Name">
-                        <input class="contact__input" type="email" placeholder="Your Email">
-                        <textarea class="contact__textarea" placeholder="Your Message"></textarea>
-                        <button class="button button--primary contact__button" type="submit">Send</button>
-                    </form>
+                <div class="contact__content">
+                    <div class="contact__form-wrapper">
+                        <form class="contact__form">
+                            <input class="contact__input" type="text" placeholder="Your Name">
+                            <input class="contact__input" type="email" placeholder="Your Email">
+                            <textarea class="contact__textarea" placeholder="Your Message"></textarea>
+                            <button class="button button--primary contact__button" type="submit">Send</button>
+                        </form>
+                    </div>
+
+                    <div class="contact__address-block">
+
+                        <address class="contact__address">
+                            <img class="contact__icon" src="photos/location.png" width="40" height="40" alt="pin" />
+                            <p class="contact__address-text">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+                        </address>
+
+                        <address class="contact__address">
+                            <img class="contact__icon" src="photos/phone.png" width="40" height="40" alt="phone" />
+                            <p class="contact__address-text">(843) 555-0130</p>
+                        </address>
+
+                        <address class="contact__address">
+                            <img class="contact__icon" src="photos/email.png" width="40" height="40" alt="email" />
+                            <p class="contact__address-text">willie.jennings@example.com</p>
+                        </address>
+
+                    </div>
+
+                    <div class="contact__socials socials">
+                        <a class="socials__link" href="#"><img class="socials__icon" src="photos/twitter.png" width="40" height="40" alt="X" /></a>
+                        <a class="socials__link" href="#"><img class="socials__icon" src="photos/facebook.png" width="40" height="40" alt="Facebook" /></a>
+                        <a class="socials__link" href="#"><img class="socials__icon" src="photos/linkedin.png" width="40" height="40" alt="LinkedIn" /></a>
+                    </div>
+
+                    <iframe class="contact__map"
+                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3750.274131512311!2d-122.4216616218856!3d37.77616212820071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHayes%20Valley%20twitter!5e0!3m2!1suk!2sua!4v1764782302464!5m2!1suk!2sua"
+                            width="600" height="450"
+                            style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
                 </div>
-
-                <div class="contact__address-block">
-
-                    <address class="contact__address">
-                        <img class="contact__icon" src="photos/location.png" width="40" height="40" alt="pin" />
-                        <p class="contact__address-text">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
-                    </address>
-
-                    <address class="contact__address">
-                        <img class="contact__icon" src="photos/phone.png" width="40" height="40" alt="phone" />
-                        <p class="contact__address-text">(843) 555-0130</p>
-                    </address>
-
-                    <address class="contact__address">
-                        <img class="contact__icon" src="photos/email.png" width="40" height="40" alt="email" />
-                        <p class="contact__address-text">willie.jennings@example.com</p>
-                    </address>
-
-                </div>
-
-                <div class="contact__socials socials">
-                    <a class="socials__link" href="#"><img class="socials__icon" src="photos/twitter.png" width="40" height="40" alt="X" /></a>
-                    <a class="socials__link" href="#"><img class="socials__icon" src="photos/facebook.png" width="40" height="40" alt="Facebook" /></a>
-                    <a class="socials__link" href="#"><img class="socials__icon" src="photos/linkedin.png" width="40" height="40" alt="LinkedIn" /></a>
-                </div>
-
-                <iframe class="contact__map"
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3750.274131512311!2d-122.4216616218856!3d37.77616212820071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHayes%20Valley%20twitter!5e0!3m2!1suk!2sua!4v1764782302464!5m2!1suk!2sua"
-                        width="600" height="450"
-                        style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container footer__grid">
 
@@ -304,16 +296,22 @@
                 <p class="footer__item">Bruce Simmons</p>
             </div>
 
-            <div class="footer__socials socials">
-                <img class="socials__icon" src="photos/location.png" width="40" height="40" alt="location" />
-                <p class="footer__address">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+            <div class="footer__details">
+                <div class="footer__address-line">
+                    <img class="footer__icon" src="photos/location.png" width="40" height="40" alt="location" />
+                    <p class="footer__address-text">6386 Spring St undefined Anchorage, Georgia 12473 United States</p>
+                </div>
 
-                <img class="socials__icon" src="photos/phone.png" width="40" height="40" alt="phone" />
-                <p class="footer__address">(843) 555-0130</p>
+                <div class="footer__address-line">
+                    <img class="footer__icon" src="photos/phone.png" width="40" height="40" alt="phone" />
+                    <p class="footer__address-text">(843) 555-0130</p>
+                </div>
 
-                <a class="socials__link" href="#"><img class="socials__icon" src="photos/twitter.png" width="40" height="40" alt="X" /></a>
-                <a class="socials__link" href="#"><img class="socials__icon" src="photos/facebook.png" width="40" height="40" alt="Facebook" /></a>
-                <a class="socials__link" href="#"><img class="socials__icon" src="photos/linkedin.png" width="40" height="40" alt="LinkedIn" /></a>
+                <div class="footer__socials socials">
+                    <a class="socials__link" href="#"><img class="socials__icon" src="photos/twitter.png" width="40" height="40" alt="X" /></a>
+                    <a class="socials__link" href="#"><img class="socials__icon" src="photos/facebook.png" width="40" height="40" alt="Facebook" /></a>
+                    <a class="socials__link" href="#"><img class="socials__icon" src="photos/linkedin.png" width="40" height="40" alt="LinkedIn" /></a>
+                </div>
             </div>
 
         </div>
