@@ -1,0 +1,122 @@
+.partners {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  font-family: "Graphic", sans-serif;
+  padding: 50px 0;
+  text-align: center;
+
+  .partners__container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners__title {
+    font-size: 48px;
+    font-weight: 400;
+    color: #252b42;
+  }
+
+  .partners__subtitle {
+    font-size: 28px;
+    font-weight: 400;
+    color: #374754;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+
+  .partners__button {
+    background-color: #2091f9;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 190px;
+  }
+
+  .partners__button:hover {
+    background-color: #1a7ac4;
+    transform: scale(1.05);
+  }
+
+  .partners__logos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .partners__item {
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 180px;
+    max-width: 300px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .partners__item:nth-child(n + 4) {
+    display: none;
+  }
+
+  .partners__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .partners__client-name {
+    font-size: 12px;
+    color: #374754;
+    margin-bottom: 15px;
+    opacity: 0.7;
+  }
+
+  .partners__logo {
+    max-width: 150px;
+    max-height: 70px;
+    object-fit: contain;
+  }
+
+  @media (min-width: 1000px) {
+    padding: 80px 0;
+
+    .partners__item:nth-child(n + 4) {
+      display: flex;
+    }
+
+    .partners__logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto 50px auto;
+    }
+
+    .partners__item {
+      margin: 0;
+      width: 100%;
+      max-width: none;
+    }
+  }
+}
