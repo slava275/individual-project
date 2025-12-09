@@ -98,7 +98,7 @@
   }
 
   @media (min-width: 1000px) {
-    padding: 80px 0;
+    padding: 40px 0;
 
     .partners__item:nth-child(n + 4) {
       display: flex;
