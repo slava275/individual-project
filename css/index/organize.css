@@ -1,0 +1,104 @@
+.organize {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  font-family: "Graphic", sans-serif;
+  padding: 50px 0;
+  text-align: center;
+  margin: 20px 0;
+
+  .organize__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .organize__content {
+    display: contents;
+  }
+
+  .organize__title {
+    font-size: 48px;
+    font-weight: 400;
+    color: #252b42;
+    margin-bottom: 25px;
+    max-width: 350px;
+  }
+
+  .organize__subtitle {
+    font-size: 0;
+    color: transparent;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "Most calendars are designed for teams.";
+      font-size: 28px;
+      font-weight: 400;
+      color: #374754;
+      display: block;
+      line-height: 1.2;
+      max-width: 300px;
+    }
+  }
+
+  .organize__button {
+    background-color: #2091f9;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 220px;
+    margin: 30px auto;
+  }
+
+  .organize__image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1000px) {
+    padding: 60px 0;
+    text-align: left;
+
+    .organize__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .organize__content {
+      display: block;
+      order: 1;
+    }
+
+    .organize__image {
+      width: 100%;
+      max-width: none;
+      order: 2;
+    }
+
+    .organize__subtitle {
+      font-size: 28px;
+      font-weight: 400;
+      color: #374754;
+      margin-bottom: 20px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
