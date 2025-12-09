@@ -1,1 +1,5 @@
 @import "./index/footer.css";
+@import "./global/global.css";
+@import "./index/contactus.css";
+@import "./index/pricing.css";
+@import "./index/testimonials.css"
