@@ -1,0 +1,147 @@
+.features {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  font-family: "Graphic", sans-serif;
+  padding: 50px 0;
+  text-align: center;
+  margin: 20px 0;
+
+  .features__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .features__title {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 20px auto;
+    color: #252b42;
+  }
+
+  .features__subtitle {
+    font-size: 0;
+    color: transparent;
+    margin-bottom: 30px;
+
+    &::before {
+      content: "Most calendars are designed for teams.";
+      font-size: 28px;
+      font-weight: 400;
+      color: #374754;
+      display: block;
+      line-height: 1.2;
+      max-width: 300px;
+    }
+  }
+
+  .features__video-wrapper {
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  .features__video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .features__grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features__item {
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+
+    .feature__icon {
+      width: 40px;
+      height: auto;
+      margin: 10px auto;
+    }
+
+    .feature__title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #252b42;
+      margin: 10px auto;
+    }
+
+    .feature__text {
+      font-size: 18px;
+      font-weight: 400;
+      color: #374754;
+      max-width: 220px;
+      margin: 10px auto;
+    }
+  }
+
+  .feature1 {
+    .feature__title {
+      max-width: 210px;
+    }
+  }
+
+  .feature2 {
+    .feature__title {
+      max-width: 240px;
+    }
+  }
+
+  .feature3 {
+    .feature__title {
+      max-width: 180px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    padding: 40px 0;
+
+    .features__subtitle {
+      font-size: 28px;
+      font-weight: 400;
+      color: #374754;
+      display: block;
+      line-height: 1.2;
+      max-width: 500px;
+      margin-bottom: 20px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .features__grid {
+      order: 1;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .features__video-wrapper {
+      order: 2;
+      width: 100%;
+    }
+
+    .features__video {
+      width: 100%;
+      max-width: 100%;
+      content: url("../../photos/video.png");
+    }
+  }
+}
