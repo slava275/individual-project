@@ -1,9 +1,4 @@
 .testimonials {
-  width: 100%;
-  background-color: #ffffff;
-  font-family: "Graphic", sans-serif;
-  height: auto;
-  padding: 50px 0; 
 
   .testimonials__container {
     width: 100%;
@@ -19,7 +14,7 @@
     font-weight: 400;
     font-size: 32px; 
     margin-bottom: 40px;
-    color: #252b42;
+    color: var(--dark-1);
   }
 
   .testimonials__logo {
@@ -33,7 +28,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #374754;
+    color: var(--dark-2);
     max-width: 800px;
     margin-bottom: 40px;
   }
@@ -62,34 +57,20 @@
   .testimonials__name {
     font-size: 14px;
     font-weight: 700;
-    color: #252b42;
+    color: var(--dark-1);
     margin: 0;
   }
 
   .testimonials__role {
     font-size: 14px;
     font-weight: 400;
-    color: #374754;
+    color: var(--dark-2);
     margin: 0;
   }
 
   .testimonials__button {
-    background-color: #2091f9;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    padding: 15px 40px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
     width: 100%;
     max-width: 280px;
-  }
-
-  .testimonials__button:hover {
-    background-color: #1a7ac4;
-    transform: scale(1.05);
   }
 
   @media (min-width: 1000px) {

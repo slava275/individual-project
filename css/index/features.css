@@ -1,11 +1,4 @@
 .features {
-  width: 100%;
-  height: auto;
-  background-color: #ffffff;
-  font-family: "Graphic", sans-serif;
-  padding: 50px 0;
-  text-align: center;
-  margin: 20px 0;
 
   .features__container {
     width: 100%;
@@ -22,19 +15,19 @@
     font-size: 48px;
     font-weight: 400;
     margin: 20px auto;
-    color: #252b42;
+    color: var(--dark-1);
   }
 
   .features__subtitle {
     font-size: 0;
-    color: transparent;
+    color: var(--transparent);
     margin-bottom: 30px;
 
     &::before {
       content: "Most calendars are designed for teams.";
       font-size: 28px;
       font-weight: 400;
-      color: #374754;
+      color: var(--dark-2);
       display: block;
       line-height: 1.2;
       max-width: 300px;
@@ -74,14 +67,14 @@
     .feature__title {
       font-size: 20px;
       font-weight: 700;
-      color: #252b42;
+      color: var(--dark-1);
       margin: 10px auto;
     }
 
     .feature__text {
       font-size: 18px;
       font-weight: 400;
-      color: #374754;
+      color: var(--dark-2);
       max-width: 220px;
       margin: 10px auto;
     }
@@ -111,7 +104,7 @@
     .features__subtitle {
       font-size: 28px;
       font-weight: 400;
-      color: #374754;
+      color: var(--dark-2);
       display: block;
       line-height: 1.2;
       max-width: 500px;

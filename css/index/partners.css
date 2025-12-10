@@ -1,11 +1,4 @@
 .partners {
-  width: 100%;
-  height: auto;
-  background-color: #ffffff;
-  font-family: "Graphic", sans-serif;
-  padding: 50px 0;
-  text-align: center;
-
   .partners__container {
     width: 100%;
     padding: 0 20px;
@@ -18,34 +11,20 @@
   .partners__title {
     font-size: 48px;
     font-weight: 400;
-    color: #252b42;
+    color: var(--dark-1);
   }
 
   .partners__subtitle {
     font-size: 28px;
     font-weight: 400;
-    color: #374754;
+    color: var(--dark-2);
     margin: 20px auto;
     max-width: 500px;
   }
 
   .partners__button {
-    background-color: #2091f9;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    padding: 15px 40px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
     width: 100%;
     max-width: 190px;
-  }
-
-  .partners__button:hover {
-    background-color: #1a7ac4;
-    transform: scale(1.05);
   }
 
   .partners__logos {
@@ -60,9 +39,9 @@
   }
 
   .partners__item {
-    border: 1px solid #d8d8d8;
+    border: 1px solid var(--border-1);
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: var(--white);
     width: 100%;
     min-width: 180px;
     max-width: 300px;
@@ -81,12 +60,12 @@
 
   .partners__item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px var(--overlay-10);
   }
 
   .partners__client-name {
     font-size: 12px;
-    color: #374754;
+    color: var(--dark-2);
     margin-bottom: 15px;
     opacity: 0.7;
   }

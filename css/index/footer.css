@@ -1,5 +1,5 @@
 .footer {
-  background-color: #252b42;
+  background-color: var(--dark-1);
   padding: 50px 20px;
   width: 100%;
 }
@@ -21,7 +21,7 @@
   font-weight: 700;
   margin-bottom: 25px;
   max-width: 250px;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .footer__col{
@@ -35,7 +35,7 @@
   font-family: "Graphic", sans-serif;
   font-weight: 400;
   margin-bottom: 20px;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .footer .footer__address-line {
@@ -56,7 +56,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .footer .footer__socials {
@@ -64,19 +64,6 @@
   gap: 20px;
 }
 
-.footer .footer__socials .socials__link {
-  display: inline-block;
-  transition: transform 0.2s;
-}
-
-.footer .footer__socials .socials__link:hover {
-  transform: scale(1.1);
-}
-
-.footer .footer__socials .socials__icon {
-  width: 40px;
-  height: 40px;
-}
 
 .footer_icon{
   width: 40px;

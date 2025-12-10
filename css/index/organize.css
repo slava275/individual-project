@@ -1,11 +1,4 @@
 .organize {
-  width: 100%;
-  height: auto;
-  background-color: #ffffff;
-  font-family: "Graphic", sans-serif;
-  padding: 50px 0;
-  text-align: center;
-  margin: 20px 0;
 
   .organize__container {
     width: 100%;
@@ -25,21 +18,21 @@
   .organize__title {
     font-size: 48px;
     font-weight: 400;
-    color: #252b42;
+    color: var(--dark-1);
     margin-bottom: 25px;
     max-width: 350px;
   }
 
   .organize__subtitle {
     font-size: 0;
-    color: transparent;
+    color: var(--transparent);
     margin-bottom: 30px;
 
     &::before {
       content: "Most calendars are designed for teams.";
       font-size: 28px;
       font-weight: 400;
-      color: #374754;
+      color: var(--dark-2);
       display: block;
       line-height: 1.2;
       max-width: 300px;
@@ -47,23 +40,9 @@
   }
 
   .organize__button {
-    background-color: #2091f9;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    padding: 15px 35px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
     width: 100%;
     max-width: 220px;
     margin: 30px auto;
-  }
-
-  .organize__button:hover {
-    background-color: #1a7ac4;
-    transform: scale(1.05);
   }
 
   .organize__image {
@@ -99,7 +78,7 @@
     .organize__subtitle {
       font-size: 28px;
       font-weight: 400;
-      color: #374754;
+      color: var(--dark-2);
       margin-bottom: 20px;
       &::before {
         display: none;

@@ -11,3 +11,71 @@ body, html, :root {
   max-width: none;
   margin: 0;
 }
+
+:root {
+  --white: #ffffff;
+  --transparent: transparent;
+  --overlay-10: rgba(0, 0, 0, 0.1);
+  --overlay-7: rgba(0, 0, 0, 0.07);
+  --dark-1: #252b42;
+  --dark-2: #374754;
+  --primary: #2091f9;
+  --primary-dark: #1a7ac4;
+  --border-1: #d8d8d8;
+  --border-2: #e8e8e8;
+  --border-3: #dddddd;
+  --bg-1: #f5f5f5;
+  --bg-2: #f0f0f0;
+  --muted: #737373;
+}
+
+.button {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 35px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.button--primary:hover {
+  background-color: var(--primary-dark);
+  transform: scale(1.05);
+}
+
+.socials__link {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+
+.socials__link:hover .socials__icon {
+  transform: scale(1.1);
+}
+
+.socials__icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* Common section defaults used across index sections */
+.section,
+.features,
+.organize,
+.partners,
+.testimonials,
+.contact,
+.prototyping {
+  width: 100%;
+  height: auto;
+  background-color: var(--white);
+  font-family: "Graphic", sans-serif;
+  padding: 50px 0;
+  text-align: center;
+  margin: 20px 0;
+}
