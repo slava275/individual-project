@@ -141,7 +141,7 @@
     .features__video {
       width: 100%;
       max-width: 100%;
-      content: url("../../photos/video.png");
+      content: url("../../photos/screen.svg");
     }
   }
 }

@@ -61,6 +61,11 @@
     margin: 30px auto;
   }
 
+  .organize__button:hover {
+    background-color: #1a7ac4;
+    transform: scale(1.05);
+  }
+
   .organize__image {
     width: 100%;
     max-width: 400px;

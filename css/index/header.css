@@ -1,0 +1,173 @@
+.header {
+  width: 100%;
+  height: auto;
+  background-image: url(../../photos/header-bg.svg);
+  font-family: "Graphic", sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 900px;
+}
+
+.header__container {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero_container {
+  width: 100%;
+  padding: 20px, 0;
+}
+
+.header__socials {
+  display: none;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Graphic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.nav-item {
+  margin: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  opacity: 0.8;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 1);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar {
+  width: auto;
+  order: 2;
+}
+
+.hero__title {
+  font-size: 48px;
+  color: #ffff;
+  font-weight: 700;
+  max-width: 800px;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.hero__subtitle {
+  color: transparent;
+  font-size: 0;
+
+  &:before {
+    content: "Most calendars are designed for teams.";
+    font-size: 28px;
+    color: #ffff;
+    font-weight: 400;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px 20px;
+  }
+}
+
+.header__logo {
+  width: 100%;
+  max-width: 270px;
+  order: 1;
+}
+
+.hero__button {
+  background-color: #2091f9;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 200px;
+  margin: 50px auto;
+}
+
+.hero__button:hover {
+  background-color: #1a7ac4;
+  transform: scale(1.05);
+}
+
+@media (min-width: 1000px) {
+  .header {
+    min-height: 1200px;
+    margin-bottom: 50px;
+  }
+
+  .header__socials {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15px;
+    order: 2;
+
+    .socials__icon {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .navbar{
+    order: 0;
+    justify-content: center;
+  }
+
+  .hero__title {
+    font-size: 74px;
+    font-weight: 400;
+    margin: 20px auto;
+  }
+
+  .hero__subtitle {
+    font-size: 28px;
+    color: #ffff;
+    font-weight: 400;
+    max-width: 750px;
+    text-align: center;
+    margin: 20px auto;
+
+    &:before {
+      display: none;
+      font-size: 0px;
+      color: transparent;
+    }
+  }
+
+  .header__container {
+    width: 100%;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 40% 35% 25%;
+    align-items: center;
+    gap: 10px;
+  }
+}
